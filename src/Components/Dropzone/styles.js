@@ -1,0 +1,49 @@
+import styled from 'styled-components';
+import { shade } from 'polished';
+
+export const ContainerDropzone = styled.div`
+    height: 200px;
+    width: 470px;
+    border: dashed 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    transition: background-color 1s;
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #ff9000;
+    }
+`;
+
+export const Container = styled.section`
+    display: flex;
+    width: 600px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+`;
+
+export const Button = styled.button`
+    width: 200px;
+    height: 40px;
+    background-color: #ff9000;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.8s;
+    margin-top: 20px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: ${shade(0.2, '#ff9000')}
+    }
+`;
