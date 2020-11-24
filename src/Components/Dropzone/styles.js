@@ -9,7 +9,8 @@ export const ContainerDropzone = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    transition: background-color 1s;
+    transition: background-color 0.2s;
+    transition: color 0.2s;
     margin-bottom: 10px;
     border-radius: 4px;
 
