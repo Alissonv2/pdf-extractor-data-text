@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
     width: 100%;
     height: 20vh;
     align-items: center;
-    background-color: #ff9000;
+    background-color: #47A4A5;
     justify-content: center;
 `;
 

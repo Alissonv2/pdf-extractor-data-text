@@ -1,9 +1,15 @@
 import React from 'react'
 import { useDropzone } from 'react-dropzone';
+import Iframe from 'react-iframe';
+import axios from 'axios';
 
 import { ContainerDropzone, Container, Button } from './styles';
 
-function MyDropzone() {
+const MyDropzone = () => {
+
+  axios.get('https://cors-anywhere.herokuapp.com/https://pdftotext.com/').then((resp) => {
+    console.log(resp.data);
+  })
 
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
 
@@ -12,18 +18,21 @@ function MyDropzone() {
       {file.path} - {file.size} bytes
     </strong>
   ));
+  
 
   return (
-      <Container>
-        <ContainerDropzone {...getRootProps()}>
-          <input {...getInputProps()} />
-          <p>Drag 'n' drop files here, or click to select files</p>
-        </ContainerDropzone>
-
-        <h2>Files: {files}</h2>
-
-        <Button type="submit">Convert</Button>
-      </Container>
+    <Container>
+      <Iframe url="https://pdftotext.com#main"
+        width="500px"
+        height="500px"
+        id="myId"
+        className="myClassname"
+        scrolling="no"
+        display="initial"
+        position="relative" 
+        styles={{padding: "10px"}}
+        />
+    </Container>
   )
 }
 

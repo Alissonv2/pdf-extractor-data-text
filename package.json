@@ -6,11 +6,16 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.0",
+    "pdf-parse": "^1.1.1",
+    "pdf.js-extract": "^0.1.4",
     "pdfjs-dist": "^2.5.207",
     "polished": "^4.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-drop-to-upload": "^1.0.2",
     "react-dropzone": "^11.2.4",
+    "react-iframe": "^1.8.0",
     "react-scripts": "4.0.0",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
@@ -38,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "worker-loader": "^3.0.5"
   }
 }

@@ -11,6 +11,7 @@ export const ContainerDropzone = styled.div`
     margin-top: 50px;
     transition: background-color 0.2s;
     transition: color 0.2s;
+    transition: height 0.2 ease;
     margin-bottom: 10px;
     border-radius: 4px;
 
@@ -24,11 +25,13 @@ export const ContainerDropzone = styled.div`
 export const Container = styled.section`
     display: flex;
     width: 600px;
-    padding-bottom: 30px;
+    height: 400px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin-top: 50px;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: #47A4A5;
     border-radius: 4px;
 `;
 
