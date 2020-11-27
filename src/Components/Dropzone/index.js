@@ -1,23 +1,9 @@
 import React from 'react'
-import { useDropzone } from 'react-dropzone';
 import Iframe from 'react-iframe';
-import axios from 'axios';
 
-import { ContainerDropzone, Container, Button } from './styles';
+import { Container } from './styles';
 
 const MyDropzone = () => {
-
-  axios.get('https://cors-anywhere.herokuapp.com/https://pdftotext.com/').then((resp) => {
-    console.log(resp.data);
-  })
-
-  const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
-
-  const files = acceptedFiles.map(file => (
-    <strong key={file.path}>
-      {file.path} - {file.size} bytes
-    </strong>
-  ));
   
 
   return (
