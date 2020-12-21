@@ -25,7 +25,7 @@ export const ContainerDropzone = styled.div`
 export const Container = styled.section`
     display: flex;
     width: 600px;
-    height: 400px;
+    height: 500px;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-top: 50px;
